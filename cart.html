@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart | Davao MGM Pharma</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/images/logo-mgm.jpg" alt="Davao MGM Pharma logo" class="brand-logo"><div>Davao MGM Pharma<small>Murang Gamot Para Sa Masa</small></div></a>
+      <nav><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Products</a></li>
+        <li><a class="active" href="cart.html">Cart</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul></nav>
+      <div class="nav-actions"><a class="btn btn-secondary" href="cart.html">Cart <span class="cart-badge cart-count">0</span></a></div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <div class="section-header"><div><h2>Your Shopping Cart</h2><p class="muted">Review items before checkout.</p></div></div>
+        <div id="rxNotice" class="notice" style="display:none;margin-bottom:1rem;"><strong>Prescription required:</strong> One or more items in your cart need a valid prescription. Prepare it for checkout verification.</div>
+        <div class="card table-wrap">
+          <table>
+            <thead><tr><th>Product</th><th>Price</th><th>Qty</th><th>Subtotal</th><th></th></tr></thead>
+            <tbody id="cartBody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:.8rem;color:var(--blue-dark);">Order Summary</h3>
+        <div style="display:flex;justify-content:space-between;margin:.4rem 0;"><span>Subtotal</span><strong id="subtotal">₱0.00</strong></div>
+        <div style="display:flex;justify-content:space-between;margin:.4rem 0;"><span>Delivery Fee</span><strong id="delivery">₱0.00</strong></div>
+        <hr style="margin:.8rem 0;border:none;border-top:1px solid #d4e8dc;">
+        <div style="display:flex;justify-content:space-between;font-size:1.1rem;"><span>Total</span><strong id="total">₱0.00</strong></div>
+        <div class="card-actions" style="margin-top:1rem;">
+          <a href="catalog.html" class="btn btn-outline">Continue Shopping</a>
+          <a href="checkout.html" class="btn btn-green">Proceed to Checkout</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="container"><p>&copy; 2026 Davao MGM Pharma.</p></div></footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Davao MGM Pharma</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/images/logo-mgm.jpg" alt="Davao MGM Pharma logo" class="brand-logo"><div>Davao MGM Pharma<small>Admin Dashboard</small></div></a>
+      <nav><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a class="active" href="admin.html">Admin</a></li>
+      </ul></nav>
+      <div class="nav-actions"><a class="btn btn-secondary" href="cart.html">Cart <span class="cart-badge cart-count">0</span></a></div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header"><div><h2>Admin Dashboard</h2><p class="muted">Overview of catalog, prescription items, and recent activity (demo data).</p></div></div>
+      <div class="grid grid-4 stats" style="margin-bottom:1rem;">
+        <div class="card"><h3>Total Products</h3><div class="value" id="statProducts">0</div></div>
+        <div class="card"><h3>Prescription Items</h3><div class="value" id="statRx">0</div></div>
+        <div class="card"><h3>Items in Cart</h3><div class="value" id="statCart">0</div></div>
+        <div class="card"><h3>Recent Orders</h3><div class="value" id="statOrders">0</div></div>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 style="margin-bottom:.6rem;color:var(--blue-dark);">Recent Order</h3>
+          <div id="recentOrder"></div>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:.6rem;color:var(--blue-dark);">Quick Notes</h3>
+          <ul style="padding-left:1.2rem;color:var(--muted);">
+            <li>Verify prescriptions for all regulated medicines before dispensing.</li>
+            <li>Check stock levels for high-demand items (Paracetamol, Vitamin C, Alcohol).</li>
+            <li>Confirm delivery address and contact number for each order.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card table-wrap" style="margin-top:1rem;">
+        <h3 style="margin:0 0 .8rem;color:var(--blue-dark);">Product Inventory</h3>
+        <table>
+          <thead><tr><th>Product</th><th>Category</th><th>Price</th><th>Stock</th><th>Rx Required</th></tr></thead>
+          <tbody id="adminProducts"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="container"><p>&copy; 2026 Davao MGM Pharma Admin.</p></div></footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+
